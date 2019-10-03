@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title> Megh Home </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+   
+    <script src="js/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MEGH</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+      
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+  <div id="headerwrap" >
+    <div class="container" id="maincl">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+        <h1>Megh</b></h1>
+        <h2>Share data with a single click</h2>
+        
+        <a class="btn btn-danger">{{.}}</a>
+        
+        <div class="col-md-6 col-md-offset-3">
+     <form id="loginform" role="form" method="post" action="/register">
+                            <br>
+                             <div class="form-group">
+                            
+                               <input type="text" name="nickname" id="name"class="form-control input-sm" placeholder="Enter Username">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+                            </div>
+                            
+                            <button  type="submit" class="btn btn-danger btn-lg" > Register </button>
+                             <a href="/" class="btn btn-danger btn-lg" >Login</a>
+                            </form>
+                           </div>
+                            <div class="col-md-4"></div>
+                            </div>
+               
+        
+        </div>
+      </div><!-- row -->
+
+        </div>
+      </div><!-- row -->
+
+    </div><!-- container -->
+  
+ 
+
+        
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="/login">
+        <input type="email" name="email" id="email" value="" placeholder="Email" />
+        <br>
+    <input type="password" name="password" id="subject" value="" placeholder="Password" />
+    <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <div class="container w">
+    <div class="row centered">
+      <br><br>
+      <div class="col-lg-4">
+        <i class="fa fa-mobile"></i>
+        <h4>Android Application</h4>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+      </div><!-- col-lg-4 -->
+
+      <div class="col-lg-4">
+        <i class="fa fa-laptop"></i>
+        <h4>Web Application</h4>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+      </div><!-- col-lg-4 -->
+
+      <div class="col-lg-4">
+        <i class="fa fa-globe"></i>
+        <h4>Chrome Extension</h4>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+      </div><!-- col-lg-4 -->
+    </div><!-- row -->
+    <br>
+    <br>
+  </div><!-- container -->
+
+
+
+  <!-- FOOTER -->
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <a href="https://github.com/megh-eel6935/Megh_Cloud_COmputing/"><i class="fa fa-github"></i></a>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- Footer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
