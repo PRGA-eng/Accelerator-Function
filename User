@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Megh - Home</title>
+
+    <link href="assets/css/bootstrap_flatty.css" rel="stylesheet">
+
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section id="container">
+
+
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Megh</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control col-lg-8" placeholder="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Username : {{.}}</a>
+                            </li>
+                            
+                            <li class="divider"></li>
+                            <li><a href="#"><div id="publickey"></div></a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li><a href="/logout">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+  
+
+        <section class="wrapper">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <br>
+                    <br>
+                    <br>
+                    <br>	
+                    <div class="list-group">
+						  <a href="#" id="usertime" class="list-group-item active" >
+						  <span class="badge"></span>
+
+						    My Timeline
+
+						  </a>
+						  <p><h4 align="center">----- Groups -----<i onclick="$('#creategroupform').toggle();" class="glyphicon glyphicon-plus pull-right"></i></h4></p>
+						  <div id="groupslist">
+
+						  </div>
+
+						</div>
+
+						<form role="form" class="form-horizontal">
+
+                        <div id="creategroupform" class="col-md-12 form-group" hidden>
+                            <h4>Group Name</h4>
+                            <br>
+                            
+                            <input class="form-control" id="groupname" placeholder="Enter Group Name"></input>
+                            <br>
+                            <button type="button"  class="btn btn-primary" id="creategroupsubmit">Create Group</button>
+                          
+                        </div>
+                        </form>
+
+                </div>
+                <div class="col-md-6">
+                   
+                    <input type="file" id="userfile" style="visibility: hidden;" />
+                    <form role="form" id="send-form" class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="col-sm-2" for="inputBody">Text/Url</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="text-input" rows="2" placeholder="Enter a message or url and click on send"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2" for="inputTo">File Upload</label>
+                            <div class="col-sm-10">
+                                <div id="userdragandrophandler" onclick="document.getElementById('userfile').click(); return false;">
+                                    <input class="form-control" id="inputTo" placeholder="click here or Drag n Drog files " readonly >
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12">
+                            <button type="button" id="userfilesend" class="btn btn-primary pull-right">Send <i class="fa fa-arrow-circle-right fa-lg"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+
+                    <ul class="timeline" id="usertimeline">
+                    
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3">
+
+                      <br><br>
+                  
+                	<div id="userslist">
+                		
+
+                	</div>
+                	
+
+                  <form id="adduserform" role="form" class="form-horizontal" hidden>
+
+                        <div class="col-md-12 form-group">
+                            <h5>Username</h5>
+                            
+                            <input class="form-control" id="addusername" placeholder="Enter Username"></input>
+                          
+                            <h5>Public key</h5>
+                            
+                            
+                            <input class="form-control" id="addpublickey" placeholder="Enter Public key"></input>
+                            <br>
+                            <button type="button"  class="btn btn-primary" id="adduser">Add User</button>
+                          
+                        </div>
+                   </form>
+
+
+                </div>
+
+            </div>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+window.paceOptions = {
+    ajax: {
+        trackMethods: ['GET', 'POST', 'PUT', 'DELETE', 'REMOVE']
+    }
+};
+</script>
+    <script src="js/pace.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
