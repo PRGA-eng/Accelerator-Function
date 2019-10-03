@@ -36,7 +36,7 @@ def es_object(rdd):
         obj['location'] = latlist[randint(0,3)]
         esearch.index(index="twitterstream", doc_type="test-type", body=obj)
         
-if __name__ == "__main__":
+if __name__ == "__main__": 
 	sc = SparkContext(appName="PythonStreamingKafkaWordCount")
 	ssc = StreamingContext(sc, 1)
 	zkQuorum = "localhost:2181"
