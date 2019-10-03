@@ -1,5 +1,5 @@
 
-# Auto detect text files with perform LF normalization
+# Auto detect text files and perform LF normalization
 * text=auto
 
 / *VS */
